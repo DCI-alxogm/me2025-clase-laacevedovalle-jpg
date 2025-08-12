@@ -1,14 +1,18 @@
-#include <stdio.h>
+# include <stdio.h>
 #include <math.h>
-
 int main(){
-float numeros[5];
-numeros[0]=.5;
-numeros[1]=1.5;
-numeros[2]=2.5;
-numeros[3]=3.5;
-numeros[4]=4.5;
-int i;
+float x[5];
+int i ;
 
-printf("%f \n", numeros);
+printf("introduce 5 numeros:\n");
+for (i=0;i<5;i++){
+    printf("x[%d]:",i +1);
+    scanf("%f",& x[i]); 
+}
+
+printf ("\n los n[umeros introducidos son:|n]");
+for(i=0; i<5; i++){
+    printf("%.4f\n",x[i]);
+}
+return 0 ;
 }
